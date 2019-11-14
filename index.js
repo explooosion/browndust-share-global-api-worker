@@ -20,6 +20,9 @@ async function handleRequest(request) {
     },
   }
   const response = await fetch(URL, init)
+  const failed =JSON.stringify([])
+  if (!response.ok) return new Response('', { ...init, status: 404 })
+
   const results = await gatherResponse(response)
   return new Response(results, init)
 }
