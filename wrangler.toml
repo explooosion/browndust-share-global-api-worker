@@ -1,0 +1,8 @@
+account_id = "4285a6c830ead5c39c02b3c245857f85"
+name = "browndust-share-global-api-worker"
+type = "webpack"
+workers_dev = true
+
+[env.production]
+route = "https://global-api.browndust.info/*"
+zone_id = "ecfe376b0714be1ebc5f36f76fd166e3"
