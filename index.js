@@ -1,5 +1,5 @@
-const APIHOST = 'https://browndust-global-api.pmang.cloud/book'
-const URL = APIHOST + '/getAllCharacters'
+const APIHOST = 'https://browndust-global-api.pmang.cloud/v1/book/character'
+const URL = APIHOST + '/getAll'
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
